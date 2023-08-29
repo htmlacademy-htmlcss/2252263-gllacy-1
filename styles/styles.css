@@ -346,6 +346,18 @@ body {
   line-height: 20px;
 }
 
+.select-control {
+  background-color: rgba(252, 252, 252, 0.30);
+}
+
+.catalog-price-container {
+  background-color: rgba(252, 252, 252, 0.30);
+}
+
+.catalog-products-filter-list {
+  background-color: rgba(252, 252, 252, 0.30);
+}
+
 .catalog-products-filter-button {
   font-size: 14px;
   line-height: 20px;
