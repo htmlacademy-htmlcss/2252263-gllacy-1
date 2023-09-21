@@ -22,12 +22,24 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #2d3440;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .pink-background {
@@ -43,6 +55,20 @@ body {
 .yellow-background {
   background-color: #fcc850;
   background-size: 100% auto;
+}
+
+/* Хедер */
+
+.page-navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-navigation-list {
+  width: 650px;
+  margin: 0;
+  padding: 0;
 }
 
 .page-navigation-link {
@@ -62,6 +88,13 @@ body {
   font-weight: 700;
 }
 
+.page-user-menu {
+  width: 470px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
 .page-navigation-link-phone {
   color: #2d3440;
   line-height: 20px;
@@ -75,6 +108,30 @@ body {
   line-height: 20px;
   text-decoration: none;
   background-color: rgba(252, 252, 252, 0.30);
+}
+
+/* Основное содержание главной страницы */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* Промо-слайдер */
+
+.promo {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-slider-product-list {
+  margin: 0;
+  padding: 0;
 }
 
 .promo-slider-product-title {
@@ -97,6 +154,12 @@ body {
   text-align: center;
 }
 
+.promo-slider-pagination-column {
+  display: flex;
+}
+
+/* Промо-акции */
+
 .promo-action-title {
   font-size: 32px;
   line-height: 46px;
@@ -104,7 +167,15 @@ body {
   text-align: center;
 }
 
+.promo-action-column {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .promo-action-product {
+  width: 570px;
   background-color: #ff7799;
 }
 
@@ -123,6 +194,8 @@ body {
   text-align: center;
 }
 
+/* Примеры из каталога */
+
 .catalog-title {
   font-size: 32px;
   line-height: 46px;
@@ -130,7 +203,16 @@ body {
   text-align: center;
 }
 
+.catalog-list {
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-item {
+  width: 270px;
   background-color: #fcfcfc;
 }
 
@@ -152,12 +234,17 @@ body {
   line-height: 24px;
 }
 
+/* О нас */
+
 .about-us {
+  width: 1170px;
+  padding: 24px;
   background-image: url("../images/main/wafer.png");
   background-repeat: repeat-y;
 }
 
 .about-us-container {
+  width: 1122px;
   background-color: #ffffff;
 }
 
@@ -172,7 +259,14 @@ body {
   color: #565c66;
 }
 
+.side-subscribe-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .side-information {
+  width: 570px;
   background-image: url("../images/main/news-background.jpg");
   background-repeat: no-repeat;
 }
@@ -193,6 +287,7 @@ body {
 }
 
 .subscribe {
+  width: 570px;
   background-image: url("../images/main/subscribe.png");
   background-repeat: no-repeat;
 }
@@ -214,9 +309,20 @@ body {
   text-align: center;
 }
 
+/* Доставка */
+
 .delivery {
+  width: 1170px;
+  padding: 64px;
+  padding-left: 100px;
+  display: flex;
   background-image: url("../images/main/delivery-background.jpg");
   background-repeat: no-repeat;
+}
+
+.delivery-description-container {
+  width: 371px;
+  margin-right: 135px;
 }
 
 .delivery-title {
@@ -234,6 +340,9 @@ body {
 }
 
 .delivery-form-container {
+  box-sizing: border-box;
+  width: 500px;
+  padding: 40px;
   background-color: #fcfcfc;
 }
 
@@ -252,12 +361,20 @@ body {
   font-weight: 700;
 }
 
+/* Контакты */
+
 .contacts {
+  width: 1170px;
+  padding: 64px;
+  padding-right: 763px;
   background-image: url("../images/main/contacts-background.jpg");
   background-repeat: no-repeat;
 }
 
 .contacts-address-container {
+  box-sizing: border-box;
+  width: 343px;
+  padding: 40px;
   background-color: #fcfcfc;
 }
 
@@ -300,6 +417,21 @@ body {
   text-align: center;
 }
 
+.page-footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 120px;
+}
+
+.our-documents {
+  width: 400px;
+}
+
 .our-documents-item-link {
   color: #2d3440;
   font-size: 14px;
@@ -315,6 +447,10 @@ body {
   text-decoration: none;
 }
 
+.academy-link-container-footer {
+  width: 210px;
+}
+
 .academy-link-container-text {
   font-size: 12px;
   line-height: 16px;
@@ -327,10 +463,28 @@ body {
   text-decoration: none;
 }
 
+/* Каталог */
+
+.inner-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-inner-title-breadcrumbs-container {
+  min-width: 379px;
+}
+
 .main-inner-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -342,6 +496,7 @@ body {
 }
 
 .catalog-products-filter {
+  width: 823px;
   font-size: 14px;
   line-height: 20px;
 }
