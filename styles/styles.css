@@ -344,6 +344,10 @@ body {
   flex-direction: column;
 }
 
+.catalog-item-image {
+  object-fit: contain;
+}
+
 .catalog-item-content-container {
   display: flex;
   flex-direction: column;
@@ -874,6 +878,10 @@ body {
   background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
+}
+
+.catalog-product-item-image {
+  object-fit: contain;
 }
 
 .catalog-product-item-content-container {
