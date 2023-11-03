@@ -273,6 +273,20 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+  padding: 6px 0;
+  border-radius: 30px;
+}
+
+.page-navigation-link-phone:hover {
+  background-color: rgba(252, 252, 252, 0.70);
+}
+
+.page-navigation-link-phone:focus {
+  background-color: rgba(252, 252, 252, 0.70);
+}
+
+.page-navigation-link-phone:active {
+  background-color: #FCFCFC;
 }
 
 .page-user-menu-link {
@@ -1668,6 +1682,14 @@ body {
   font-style: normal;
 }
 
+.contacts-address-phone-link:hover {
+  opacity: 0.5;
+}
+
+.contacts-address-phone-link:active {
+  opacity: 0.2;
+}
+
 .contacts-address-description-small {
   width: 160px;
   margin: 0;
@@ -2831,6 +2853,14 @@ line-height: 30px;
   cursor: pointer;
 }
 
+.popover-basket-item-delete:hover {
+  opacity: 0.5;
+}
+
+.popover-basket-item-delete:active{
+  opacity: 0.2;
+}
+
 .popover-basket-form {
   display: flex;
   justify-content: space-between;
@@ -3161,6 +3191,14 @@ line-height: 30px;
   margin-bottom: 4px;
 }
 
+.popover-entry-form-link:hover {
+  opacity: 0.5;
+}
+
+.popover-entry-form-link:active {
+  opacity: 0.2;
+}
+
 .popover-search {
   position: absolute;
   top: 40px;
@@ -3245,6 +3283,10 @@ line-height: 30px;
   outline: 1px solid #2d3440;
 }
 
+.popover-search-form-field:disabled {
+  opacity: 0.2;
+}
+
 .popover-search-form-field::placeholder {
   color: #b9b9b9;
 }
@@ -3262,4 +3304,12 @@ line-height: 30px;
   background-position: center;
   opacity: 0.4;
   cursor: pointer;
+}
+
+.popover-search-form-reset:hover {
+  opacity: 0.5;
+}
+
+.popover-search-form-reset:active {
+  opacity: 0.2;
 }
