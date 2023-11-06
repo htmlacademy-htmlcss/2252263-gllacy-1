@@ -715,9 +715,8 @@ body {
 
 .promo-slider-pagination-button-current:focus {
   background-color: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2d3440;
+  outline: 1px solid #2d3440;
   opacity: 0.3;
-  outline: none;
 }
 
 .promo-slider-pagination-button:active {
@@ -1269,7 +1268,7 @@ body {
   border: 1px solid #ea5454;
 }
 
-.subscribe-form-field:focus:invalid {
+.subscribe-form-field:hover:invalid {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
@@ -1460,7 +1459,7 @@ body {
   border: 1px solid #ea5454;
 }
 
-.delivery-form-field:focus:invalid {
+.delivery-form-field:hover:invalid {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
@@ -2049,7 +2048,7 @@ body {
   border: 1px solid #ea5454;
 }
 
-.modal-field:focus:invalid {
+.modal-field:hover:invalid {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
@@ -2400,7 +2399,9 @@ margin: 0;
 
 .catalog-products-filter-list-fat {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 16px;
+  row-gap: 16px;
   list-style: none;
   margin: 0;
   padding: 8px 24px;
@@ -2466,7 +2467,9 @@ margin: 0;
 
 .catalog-products-filter-list-fillers {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 16px;
+  row-gap: 16px;
   list-style: none;
   margin: 0;
   padding: 9px 24px;
@@ -3180,7 +3183,7 @@ line-height: 30px;
   border: 1px solid #ea5454;
 }
 
-.popover-entry-form-input:focus:invalid {
+.popover-entry-form-input:hover:invalid {
   border: 1px solid #ea5454;
   outline: 1px solid #ea5454;
 }
@@ -3407,6 +3410,7 @@ line-height: 30px;
   top: 16px;
   width: 16px;
   height: 16px;
+  display: block;
   background-color: #fcfcfc;
   border: none;
   background-image: url("../images/cross.svg");
@@ -3422,4 +3426,8 @@ line-height: 30px;
 
 .popover-search-form-reset:active {
   opacity: 0.2;
+}
+
+.popover-search-form-field:placeholder-shown ~ .popover-search-form-reset {
+  display: none;
 }
