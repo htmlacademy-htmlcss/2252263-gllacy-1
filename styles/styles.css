@@ -1779,7 +1779,7 @@ body {
 
 .page-footer-container {
   width: 1170px;
-  margin: 50px auto;
+  margin: 48px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1852,7 +1852,7 @@ body {
 }
 
 .our-documents-list {
-  width: 354px;
+  width: 355px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1870,7 +1870,7 @@ body {
 
 .our-documents-item:nth-child(3) {
   margin-right: 39px;
-  margin-left: 22px;
+  margin-left: 23px;
 }
 
 .our-documents-item-link {
@@ -1913,6 +1913,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2px;
   width: 193px;
 }
 
@@ -2249,7 +2250,7 @@ body {
 .select-control-title {
   display: block;
   margin-bottom: 8px;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .select-control {
@@ -2283,13 +2284,15 @@ body {
 .range-wrapper-inputs {
   box-sizing: border-box;
   margin-right: 45px;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .range-input {
-  width: 25px;
+  width: 26px;
+  margin-left: -1px;
   padding: 0 2px;
   font: inherit;
+  letter-spacing: 0.1px;
   text-align: center;
   background-color: transparent;
   border: none;
@@ -2394,7 +2397,7 @@ margin: 0;
 .fat-filter-legend {
   display: block;
   margin-bottom: 8px;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .catalog-products-filter-list-fat {
@@ -2428,6 +2431,10 @@ margin: 0;
   display: none;
 }
 
+.fat-control-label {
+  letter-spacing: 0.1px;
+}
+
 .fat-control-input:checked + .fat-control-percent .fat-control-percent-icon-on {
   display: block;
 }
@@ -2455,14 +2462,14 @@ margin: 0;
 .catalog-products-filter-fillers {
   display: flex;
   flex-direction: column;
-  width: 604px;
-  margin-right: 19px;
+  width: 605px;
+  margin-right: 17px;
 }
 
 .filter-fillers-legend {
   display: block;
   margin-bottom: 8px;
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .catalog-products-filter-list-fillers {
@@ -2494,6 +2501,10 @@ margin: 0;
 
 .fillers-control-taste-icon-on {
   display: none;
+}
+
+.fillers-control-label {
+  letter-spacing: 0.1px;
 }
 
 .fillers-control-input:checked + .fillers-control-taste .fillers-control-taste-icon-on {
@@ -2895,7 +2906,7 @@ line-height: 30px;
 .popover-basket-list {
   width: 100%;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding: 0;
   padding-bottom: 32px;
   list-style: none;
@@ -2935,8 +2946,9 @@ line-height: 30px;
 }
 
 .popover-basket-item-price {
+  width: 55px;
   margin: 0;
-  margin-right: 50px;
+  margin-right: 47px;
   text-align: left;
   align-self: center;
 }
@@ -3209,7 +3221,7 @@ line-height: 30px;
 }
 
 .popover-entry-form-input::placeholder {
-  color: #b9b9b9;
+  color: #2d3440;
 }
 
 .popover-entry-form-button {

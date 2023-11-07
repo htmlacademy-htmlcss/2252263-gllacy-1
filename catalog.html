@@ -18,7 +18,7 @@
               </a>
             </li>
             <li class="page-navigation-item dropdown-catalog">
-                <a class="page-navigation-link-active" href="#">Каталог</a>
+                <a class="page-navigation-link dropdown-catalog-link" href="#">Каталог</a>
                 <ul class="dropdown-catalog-content-list">
                   <li class="dropdown-catalog-content-item">
                     <a class="dropdown-catalog-content-link novelties" href="#">Новинки</a>
@@ -89,7 +89,7 @@
                     <label class="visually-hidden" for="popover-entry-form-email">Ваш email.</label>
                     <input class="popover-entry-form-input" type="email" name="popover-entry-form-email" id="popover-entry-form-email" placeholder="email@example.com">
                     <label class="visually-hidden" for="popover-entry-form-password">Ваш пароль.</label>
-                    <input class="popover-entry-form-input" type="password" name="popover-entry-form-password" id="popover-entry-form-password">
+                    <input class="popover-entry-form-input" type="password" name="popover-entry-form-password" id="popover-entry-form-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
                     <button class="popover-entry-form-button" type="submit">Войти</button>
                     <div class="popover-entry-form-links-wrapper">
                       <a class="popover-entry-form-link" href="#">Забыли пароль?</a>
@@ -193,15 +193,15 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="range-wrapper-inputs-price">
-                      Цена:<input class="range-input" type="number" name="catalog-price-min" id="catalog-price-min" min="100" max="249" value="100">₽
+                      Цена: <input class="range-input" type="number" name="catalog-price-min" id="catalog-price-min" min="100" max="249" value="100">₽
                     </label>
-                    <label class="range-wrapper-inputs-price"> –
-                      <input class="range-input" type="number" name="catalog-price-max" id="catalog-price-max" min="250" max="500" value="500"> ₽
+                    <label class="range-wrapper-inputs-price">
+                      – <input class="range-input" type="number" name="catalog-price-max" id="catalog-price-max" min="250" max="500" value="500">₽
                     </label>
                   </div>
                   <div class="range-scale-wrapper">
                     <div class="range-scale">
-                      <div class="range-bar" style="left: 31px; width: 72px">
+                      <div class="range-bar" style="left: 32px; width: 72px">
                         <button class="range-toggle range-toggle-min" type="button">
                           <svg class="range-toggle-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#fcfcfc"  xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="2"/></svg>
                           <span class="visually-hidden">Изменить минимальную цену.</span>
