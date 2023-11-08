@@ -2092,6 +2092,7 @@ body {
 
 .modal-field-comments {
   height: 149px;
+  resize: none;
 }
 
 .modal-form-button {
@@ -2857,7 +2858,7 @@ background: rgba(252, 252, 252, 0.5);
   display: none;
 }
 
-.basket:active + .popover-basket {
+.basket:focus-within + .popover-basket {
   display: block;
 }
 
@@ -3118,7 +3119,7 @@ line-height: 30px;
   display: none;
 }
 
-.entry:active + .popover-entry {
+.entry:focus-within + .popover-entry {
   display: block;
 }
 
